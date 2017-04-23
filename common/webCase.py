@@ -16,7 +16,7 @@ class WebCaseBase():
         _d_report_common = {"test_success": 0, "test_failed": 0, "test_sum": 0} #case的运行次数和性能
         for case in getCase["testcase"]:
             go.operate_element(case) # 操作用例
-        if go.findElement(getCase["check"][0]):
+        if go.findElement(getCase["check"]):
             print("通过")
         else:
             print("失败")

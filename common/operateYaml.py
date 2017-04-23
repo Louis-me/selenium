@@ -16,6 +16,6 @@ def getYam(homeyaml):
 
 
 if __name__=="__main__":
-    x = getYam(PATH("../open.yaml"))
-    print(x)
-
+    x = getYam(PATH("../yaml/login.yaml"))
+    for key in x["check"]:
+        print(key)
