@@ -1,0 +1,19 @@
+﻿testinfo: 
+    - id: 001
+      moudle: mok模块
+      intr: 个人
+testcase:
+    - element_info: //*[@id="login"]/div[1]/div[2]/form/div[1]/input
+      find_type: by_xpath
+      operate_type: send_keys
+      text: swx458348
+    - element_info: //*[@id="login"]/div[1]/div[2]/form/div[2]/input
+      find_type: by_xpath
+      operate_type: send_keys
+      text: ~shikun1989
+    - element_info: //*[@id="login"]/div[1]/div[2]/form/button[1]
+      find_type: by_xpath
+      operate_type: click
+check:
+    - element_info: //*[@id="home"]/a
+      find_type: by_xpath
