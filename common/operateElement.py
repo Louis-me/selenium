@@ -2,7 +2,7 @@ __author__ = 'shikun'
 # -*- coding: utf-8 -*-
 import selenium.common.exceptions
 from selenium.webdriver.support.ui import WebDriverWait
-from common import until as common
+from common import util as common
 # 此脚本主要用于查找元素是否存在，操作页面元素
 class OperateElement():
     def __init__(self, driver=""):

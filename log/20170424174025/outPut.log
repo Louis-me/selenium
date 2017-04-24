@@ -1,0 +1,11 @@
+2017-04-24 17:40:26,619 - root - INFO - ----  //*[@id="login"]/div[1]/div[2]/form/div[1]/input send_keys   START     ----
+2017-04-24 17:40:26,753 - root - INFO - ----  //*[@id="login"]/div[1]/div[2]/form/div[2]/input send_keys   START     ----
+2017-04-24 17:40:26,837 - root - INFO - ----  //*[@id="login"]/div[1]/div[2]/form/button[1] click   START     ----
+2017-04-24 17:40:37,229 - root - INFO - ----  //*[@id="home"]/a Ê§°Ü   START     ----
+2017-04-24 17:40:37,229 - root - INFO - [CheckPoint_1]: //*[@id="home"]/a: NG
+2017-04-24 17:40:38,405 - root - INFO - ----  //*[@id="setting111"]/a Ê§°Ü   START     ----
+2017-04-24 17:40:38,405 - root - INFO - [CheckPoint_2]: //*[@id="setting111"]/a: NG
+2017-04-24 17:40:46,538 - root - INFO - ----  //*[@id="login"]/div[1]/div[2]/form/div[1]/input send_keys   START     ----
+2017-04-24 17:40:46,659 - root - INFO - ----  //*[@id="login"]/div[1]/div[2]/form/div[2]/input send_keys   START     ----
+2017-04-24 17:40:46,738 - root - INFO - ----  //*[@id="login"]/div[1]/div[2]/form/button[1] click   START     ----
+2017-04-24 17:40:50,582 - root - INFO - ----  //*[@id="home"]/a ³É¹¦   START     ----

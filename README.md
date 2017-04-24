@@ -2,10 +2,8 @@
 * 此项目是在[Selenium](https://github.com/SeleniumHQ/selenium)开源工具封装而成的自动化和web测试工具
 
 # 功能
-* 都是基于python3
-* 都是基于webdriver，大部分代码都可以通用，只是配置文件不一样
+* 基于python3
 * 数据维护用的YMAL
-* 邮件发送excel的测试报告
 
 
 # 用法
@@ -45,7 +43,29 @@ testcase:
 check:
     - element_info: //*[@id="home"]/a
       find_type: by_xpath
+    - element_info: //*[@id="setting111"]/a
+      find_type: by_xpath
 
+```
+
+**编写测试用例**
+
+基本上是直接复制
+
+```
+PATH = lambda p: os.path.abspath(
+    os.path.join(os.path.dirname(__file__), p)
+)
+from testRunner.runnerBase import TestInterfaceCase
+class testSetting(TestInterfaceCase):
+    def setUp(self, methodName=''):
+        super(testSetting, self).setUp()
+        self.bc = webCase.WebCaseBase(driver=self.driver, casename="testSetting")
+    def tearDown(self):
+        self.driver.quit()
+        pass
+    def test_setting(self):
+        self.bc.execCase(PATH("../yaml/setting.yaml"))
 ```
 
 
@@ -56,7 +76,10 @@ check:
 pyhton testRunner/runner.py
 ```
 
+**测试报告**
+![](log/comment.PNG "comment.PNG")
 
+![](log/detail.PNG "detail.PNG")
 
 
 

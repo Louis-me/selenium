@@ -24,7 +24,7 @@ def selenium_testcase():
     driver.get(openurl)
     return driver
 class TestInterfaceCase(unittest.TestCase):
-    def __init__(self, methodName='runTest', l_devices=None):
+    def __init__(self, methodName='runTest'):
         super(TestInterfaceCase, self).__init__(methodName)
     @staticmethod
     def setUpClass():

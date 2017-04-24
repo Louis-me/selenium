@@ -1,21 +1,19 @@
 ﻿testinfo: 
-    - id: test001
+    - id: test002
       moudle: 登录
-      intr: 登录功能
+      intr: 设置
 testcase:
     - element_info: //*[@id="login"]/div[1]/div[2]/form/div[1]/input
       find_type: by_xpath
       operate_type: send_keys
-      text: user
+      text: username
     - element_info: //*[@id="login"]/div[1]/div[2]/form/div[2]/input
       find_type: by_xpath
       operate_type: send_keys
-      text: pwd
+      text: ~pwd
     - element_info: //*[@id="login"]/div[1]/div[2]/form/button[1]
       find_type: by_xpath
       operate_type: click
 check:
     - element_info: //*[@id="home"]/a
-      find_type: by_xpath
-    - element_info: //*[@id="setting111"]/a
       find_type: by_xpath

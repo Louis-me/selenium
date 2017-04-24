@@ -5,13 +5,13 @@ PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 from testRunner.runnerBase import TestInterfaceCase
-class testLogin(TestInterfaceCase):
+class testSetting(TestInterfaceCase):
     def setUp(self, methodName=''):
-        super(testLogin, self).setUp()
-        self.bc = webCase.WebCaseBase(driver=self.driver, casename="testLogin")
+        super(testSetting, self).setUp()
+        self.bc = webCase.WebCaseBase(driver=self.driver, casename="testSetting")
     def tearDown(self):
         self.driver.quit()
         pass
-    def test_login(self):
-        self.bc.execCase(PATH("../yaml/login.yaml"))
+    def test_setting(self):
+        self.bc.execCase(PATH("../yaml/setting.yaml"))
 

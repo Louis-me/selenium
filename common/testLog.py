@@ -5,13 +5,15 @@ import time
 import os
 from time import sleep
 import threading
-
+PATH = lambda p: os.path.abspath(
+    os.path.join(os.path.dirname(__file__), p)
+)
 class Log:
 
     def __init__(self):
 
         global logger, resultPath, logPath
-        resultPath ="d:\\appium"
+        resultPath =PATH("../log")
         logPath = os.path.join(resultPath, (time.strftime('%Y%m%d%H%M%S', time.localtime())))
         if os.path.exists(logPath) == False:
             os.makedirs(logPath)
@@ -98,7 +100,7 @@ class Log:
         self.logger.info("[CheckPoint_"+str(self.checkNo)+"]: "+checkPoint+": NG")
 
         # take shot
-        self.screenshotNG(driver, caseName)
+        return self.screenshotNG(driver, caseName)
 
     def screenshotOK(self, driver, caseName):
         """screen shot
@@ -126,7 +128,7 @@ class Log:
         # wait for animations to complete before taking screenshot
         sleep(1)
         driver.get_screenshot_as_file(os.path.join(screenshotPath+screenshotName))
-
+        return os.path.join(screenshotPath+screenshotName)
     def screenshotERROR(self, driver, caseName):
         """screen shot
         :param driver:
@@ -163,11 +165,11 @@ class myLog:
 
         return myLog.log
 
-# if __name__ == "__main__":
-#     logTest = myLog.getLog()
-#     logger = logTest.getMyLogger()
-#     logger.debug("1111")
-#     logTest.buildStartLine("test")
+if __name__ == "__main__":
+    logTest = myLog.getLog()
+    logger = logTest.getMyLogger()
+    logger.debug("1111")
+    logTest.buildStartLine("test")
 
 
 

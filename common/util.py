@@ -1,3 +1,4 @@
+import time
 AME = "name"
 ID = "id"
 XPATH = "xpath"
@@ -16,3 +17,6 @@ WAIT_TIME = 10
 CLICK = "click"
 SEND_KEYS = "send_keys"
 FIND_STR = "find_str"
+
+DATA = {"title": "项目名称", "sum": 0, "pass": 0, "fail": 0, "test_date":"", "sum_time":""}
+INFO = []
