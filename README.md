@@ -1,9 +1,12 @@
-# 项目名及简介
-* 此项目是在[Selenium](https://github.com/SeleniumHQ/selenium)开源工具封装而成的自动化和web测试工具
+# 说明
+之前分享过自己写的appium框架，有很多待优化的地方，先从selenium开始优化
 
 # 功能
-* 基于python3
-* 数据维护用的YMAL
+* yaml维护用例
+* 支持多检查点
+* excel记录报告，失败有截图展示
+* 本地记录日志
+* 参数化测试用例管理
 
 
 # 用法
@@ -11,7 +14,7 @@
 **下载项目:**
 
 ```
-git clone git@github.com:Louis-me/selenium_auto.git
+git clone git@github.com:Louis-me/selenium.git
 ```
 
 **配置openurl.yaml**
