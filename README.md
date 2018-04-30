@@ -50,7 +50,7 @@ testALoginFail (TestCase.HomeTest.HomeTest) ... ==操作步骤：div.container>u
 ok
 testBLogin (TestCase.HomeTest.HomeTest) ... ==操作步骤：div.container>ul>li:nth-child(2)_css_click_ ==
 ==操作步骤：input-lg_class_name_send_keys_lose==
-==操作步骤：user_password_id_send_keys_shikun1988==
+==操作步骤：user_password_id_send_keys_XXX==
 ==操作步骤：div.form-actions_css_click_ ==
 ==操作步骤：dropdown-avatar_class_name_click_ ==
 ==操作步骤：//ul[@class='dropdown-menu']/li/a[contains(text(),'lose')]_xpath_ _ ==
@@ -59,7 +59,7 @@ testBLogin (TestCase.HomeTest.HomeTest) ... ==操作步骤：div.container>ul>li
 ok
 testHotTopic (TestCase.MyTest.MyTest) ... ==操作步骤：div.container>ul>li:nth-child(2)_css_click_ ==
 ==操作步骤：input-lg_class_name_send_keys_lose==
-==操作步骤：user_password_id_send_keys_shikun1988==
+==操作步骤：user_password_id_send_keys_xxxx==
 ==操作步骤：div.form-actions_css_click_ ==
 ==操作步骤：dropdown-avatar_class_name_click_ ==
 ==操作步骤：dropdown-avatar_class_name_click_ ==
