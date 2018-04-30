@@ -1,0 +1,28 @@
+testinfo:
+    - id: test003
+      title: 热门话题
+      info: 打开testerhome
+testcase:
+    - element_info: dropdown-avatar
+      find_type: class_name
+      operate_type: click
+      info: 点击图像
+    - element_info: //ul[@class='dropdown-menu']/li/a
+      find_type: xpath
+      operate_type: click
+      info: 点击用户名
+    - element_info: //ul[@class="list-group"]/li[1]/div/a[2]
+      find_type: xpath
+      operate_type: get_text
+      info: 获取热门话题下的第一条标题
+    - element_info: ul.list-group > li:nth-child(1) > div.title > a:nth-child(2)
+      find_type: css
+      operate_type: click
+      info: 点击热门话题下的第一条标题
+
+check:
+    - element_info: /html/head/title
+      find_type: xpath
+      operate_type: get_text
+      check: compare
+      info: 详情页的标题和历史标题相等

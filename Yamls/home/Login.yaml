@@ -1,0 +1,32 @@
+testinfo:
+    - id: test001
+      title: 登录成功
+      info: 打开testerhome
+testcase:
+    - element_info: div.container>ul>li:nth-child(2)
+      find_type: css
+      operate_type: click
+      info: 点击登录
+    - element_info: input-lg
+      find_type: class_name
+      operate_type: send_keys
+      msg: lose
+      info: 输入用户名lose
+    - element_info: user_password
+      find_type: id
+      operate_type: send_keys
+      msg: XXXXX
+      info: 输入密码XXXXXX
+    - element_info: div.form-actions
+      find_type: css
+      operate_type: click
+      info: 点击登录
+    - element_info: dropdown-avatar
+      find_type: class_name
+      operate_type: click
+      info: 点击图像
+
+check:
+    - element_info: //ul[@class='dropdown-menu']/li/a[contains(text(),'lose')]
+      find_type: xpath
+      info: 查找用户名lose成功

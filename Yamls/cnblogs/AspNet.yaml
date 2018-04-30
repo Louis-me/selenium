@@ -1,0 +1,28 @@
+testinfo:
+    - id: test005
+      title: .net分类下的详情页
+      info: 打开博客园
+testcase:
+    - element_info: cate_item_108698
+      find_type: id
+      operate_type: move_to_element
+      info: 鼠标悬停到.net分类上
+    - element_info: div.cate_content_block > ul > li:nth-child(1)
+      find_type: css
+      operate_type: click
+      info: 点击新手区
+    - element_info: div#post_list > div:nth-child(1) > div.post_item_body > h3 > a
+      find_type: css
+      operate_type: get_text
+      info: 获取新手区推荐的第一条数据
+    - element_info:  div#post_list > div:nth-child(1) > div.post_item_body > h3 > a
+      find_type: css
+      operate_type: click
+      info: 点击新手区推荐的第一条数据
+
+check:
+    - element_info: /html/head/title
+      find_type: xpath
+      operate_type: get_text
+      check: compare
+      info: 详情页的标题和历史标题相等

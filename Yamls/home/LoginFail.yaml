@@ -1,0 +1,29 @@
+testinfo:
+    - id: test001
+      title: 登录失败
+      launch: 1
+      info: 打开testerhome
+testcase:
+    - element_info: div.container>ul>li:nth-child(2)
+      find_type: css
+      operate_type: click
+      info: 点击登录
+    - element_info: input-lg
+      find_type: class_name
+      operate_type: send_keys
+      msg: lose1
+      info: 输入用户名lose1
+    - element_info: user_password
+      find_type: id
+      operate_type: send_keys
+      msg: 1231231232
+      info: 输入密码1231231232
+    - element_info: div.form-actions
+      find_type: css
+      operate_type: click
+      info: 点击登录
+
+check:
+    - element_info: div.alert-warning
+      find_type: css
+      info: 出现错误的密码登录不成功提示框
